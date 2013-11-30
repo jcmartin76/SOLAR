@@ -1,0 +1,16 @@
+* The next is an explanation given by Norton et.al. 2006 in which they shown why
+they chosen the Fe I line centered at 6173 \AA to the HMI/SDO. An interesting
+issue is said in the abstract where they say the follow:
+
+"The one exception to the better performance of the Fe I line is when high 
+field strengths combine with high velocities to move the spectral line beyond 
+effective sampling range. The higher geff of FeI means that its useful range 
+of velocity values in regions of strong magnetic field is smaller than Ni I."
+
+It could be interesting trying to explain why we saw a blueshift in the June 
+12, 2010 solar flare event.
+
+***************************************************************************
+
+
+
