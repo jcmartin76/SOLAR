@@ -5,6 +5,9 @@
 
 # ..ooOO0OOoo....ooOO0OOoo....ooOO0OOoo....ooOO0OOoo....ooOO0OOoo..
 # Program wich calculates Energy aociated to the WLE in a solar flare
+#
+# Input: intensity and diff cubes, and a mask.fits. Solar irradiance of the day.
+#
 # December 2013
 # JCMO & Milo-BC
 # email: jcbuitragoc@unal.edu.co
@@ -43,8 +46,16 @@ datam = hdu_mask[0].data
 
 # <codecell>
 
+# The HMI-Intensigrams give us the intensity in DNs (digital numbers) qhic means that we 
+# need to convert them to real units of flux. To do that we must search the value of the
+# solar irradiance for the specific day in which the observations were done. We strongly
+# recommend you find that value through the webpage: http://lpc2e.cnrs-orleans.fr/~soteria/
+# List called: 'sim_last.txt' gives solar irradiance in visible and infrared vawelenghts
+# [Units: W/m^2/nm]
 
-#LASP Irradiance of the day
+
+# Meanwhile we are going to use that value for the irradiance as a proof:
+# LASP Irradiance of the day
 lasp_irrad = 1357.50
 
 fmask = 27
